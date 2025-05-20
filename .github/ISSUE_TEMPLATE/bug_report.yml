@@ -23,10 +23,10 @@ body:
       label: Request Body
       description: Gib hier den vollständigen API-Request an – z. B. JSON oder andere Formate.
       placeholder: |
-      {
-        "email": "beispiel@mail.com",
-        "password": "••••••••"
-      }
+        {
+          "email": "beispiel@mail.com",
+          "password": "••••••••"
+        }
       render: json
 
   - type: textarea
@@ -35,8 +35,8 @@ body:
       label: Response Body
       description: Füge hier die Server-Antwort ein, die du erhalten hast (z. B. Fehlermeldung, JSON).
       placeholder: |
-      {
-        "error": "Invalid credentials",
-        "status": 401
-      }
+        {
+          "error": "Invalid credentials",
+          "status": 401
+        }
       render: json
