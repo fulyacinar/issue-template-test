@@ -1,18 +1,12 @@
 name: Bug-Report
 description: Bug-Report mit URL, Request- und Response-Body
+title: "[BUG] "
 labels: [bug]
 body:
-  - type: input
-    id: bug-title
-    attributes:
-      label: Titel des Bugs
-    validations:
-      required: true
-
   - type: textarea
     id: bug-description
     attributes:
-      label: Beschreibung
+      label: Description
     validations:
       required: true
 
@@ -27,10 +21,22 @@ body:
     id: request-body
     attributes:
       label: Request Body
+      description: Gib hier den vollständigen API-Request an – z. B. JSON oder andere Formate.
+      placeholder: |
+      {
+        "email": "beispiel@mail.com",
+        "password": "••••••••"
+      }
       render: json
 
   - type: textarea
     id: response-body
     attributes:
       label: Response Body
+      description: Füge hier die Server-Antwort ein, die du erhalten hast (z. B. Fehlermeldung, JSON).
+      placeholder: |
+      {
+        "error": "Invalid credentials",
+        "status": 401
+      }
       render: json
