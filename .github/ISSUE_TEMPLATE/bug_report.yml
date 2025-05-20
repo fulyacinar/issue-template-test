@@ -1,6 +1,5 @@
 name: Bug-Report
 description: Bug-Report mit URL, Request- und Response-Body
-title: "[BUG] "
 labels: [bug]
 body:
   - type: input
