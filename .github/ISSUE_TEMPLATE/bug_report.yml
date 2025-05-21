@@ -1,15 +1,8 @@
 name: Bug-Report
 description: Bug-Report mit URL, Request- und Response-Body
-title: "[BUG] "
-labels: [bug]
+title: ""
+issue-type: [bug]
 body:
-  - type: textarea
-    id: bug-description
-    attributes:
-      label: Description
-    validations:
-      required: true
-
   - type: input
     id: bug-url
     attributes:
@@ -40,3 +33,10 @@ body:
           "status": 401
         }
       render: json
+
+  - type: textarea
+    id: bug-description
+    attributes:
+      label: Description
+    validations:
+      required: true
