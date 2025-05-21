@@ -1,7 +1,7 @@
 name: Bug-Report
 description: Bug-Report mit URL, Request- und Response-Body
-title: ""
-issue-type: [bug]
+title: "[BUG] "
+lable: [bug]
 body:
   - type: input
     id: bug-url
